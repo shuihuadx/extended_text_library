@@ -480,17 +480,13 @@ class CommonTextSelectionGestureDetectorBuilder
     switch (Theme.of(_context).platform) {
       case TargetPlatform.iOS:
       case TargetPlatform.macOS:
-        renderEditable.selectPositionAt(
-          from: details.globalPosition,
-          cause: SelectionChangedCause.longPress,
-        );
+        renderEditable.selectWord(cause: SelectionChangedCause.longPress);
         break;
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
       case TargetPlatform.linux:
       case TargetPlatform.windows:
         renderEditable.selectWord(cause: SelectionChangedCause.longPress);
-        Feedback.forLongPress(_context);
         break;
     }
   }
