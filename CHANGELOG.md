@@ -1,3 +1,22 @@
+# 9.0.0
+
+* Migrate to 2.10.0.
+* Add shouldShowSelectionHandles and textSelectionGestureDetectorBuilder call back to define the behavior of handles and toolbar.
+* Shortcut support for web and desktop.
+
+# 8.0.2
+
+* Fix  hittest is not right on ExtendedTextField
+
+# 8.0.1
+
+* Fix selectionWidthStyle and selectionHeightStyle are not working.
+
+# 8.0.0
+
+* Support to use keyboard move cursor for SpecialInlineSpan.
+* Fix issue that backspace delete two chars.
+  
 # 7.0.0
 
 * Add [SpecialTextSpan.mouseCursor], [SpecialTextSpan.onEnter] and [SpecialTextSpan.onExit].
